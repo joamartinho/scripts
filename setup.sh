@@ -39,7 +39,7 @@ remover_pacotes=(
 
 repositorios=(
 	"https://github.com/joaoeme/dotfiles.git|/home/joao/Área de trabalho/dotfiles"
-	"https://github.com/joaoeme/dotfiles.git|/home/joao/Área de trabalho/joaoeme.github.io"
+	"https://github.com/joaoeme/joaoeme.github.io.git|/home/joao/Área de trabalho/joaoeme.github.io"
 )
 
 backup_itens=(
