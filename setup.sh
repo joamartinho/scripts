@@ -3,41 +3,47 @@
 set -euo pipefail
 
 instalar_pacotes=(
+	calibre
 	cowsay
 	curl
 	exiftool
+	fastfetch
 	ffmpeg
 	fortune
-	gcolo3
+	ghostwriter
 	git
-	gnome-console
+	imagemagick
+	kcolorchooser
+	kleopatra
+	kolourpaint
 	libreoffice-l10n-pt-br
 	lolcat
 	mkvtoolnix
-	papers
+	qbittorrent
 	rsync
-	showtime
 	texlive
 	thunderbird
-	transmission
+	vlc
 	wget
 )
 
 remover_pacotes=(
-	evince
-	evolution
-	gnome-clocks
-	gnome-contacts
-	gnome-maps
-	gnome-music
-	gnome-snapshot
-	gnome-sound-recorder
-	gnome-terminal
-	gnome-tour
-	gnome-tweaks
-	gnome-weather
-	shotwell
-	totem
+	akregator
+	dragonplayer
+	juk
+	kaddressbook
+	kdeconnect
+	kfind
+	khelpcenter
+	kmail
+	kmag
+	kmousetool
+	kmouth
+	konqueror
+	kontrast
+	korganizer
+	plasma-welcome
+	xterm
 )
 
 repositorios=(
@@ -56,14 +62,8 @@ backup_itens=(
 	"/media/joao/Backup/Imagens|/home/joao/Imagens|conteudo"
 	"/media/joao/Backup/Modelos|/home/joao/Modelos|conteudo"
 	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho|pasta"
-	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
+	"/home/joao/Área de trabalho/dotfiles/.git-credentials|/home/joao/.git-credentials|arquivo"
 	# "/media/joao/Backup/Saves|/home/joao/.config/StardewValley|pasta"
-)
-
-gsettings=(
-	"gsettings set org.gnome.desktop.interface clock-show-weekday true"
-	"gsettings set org.gnome.desktop.wm.preferences action-right-click-titlebar 'toggle-maximize'"
-	"gsettings set org.gnome.mutter center-new-windows true"
 )
 
 comandos_avulsos=(
@@ -71,8 +71,6 @@ comandos_avulsos=(
 	# "printf 'n\n\ny\n/home/joao/.gf\n1\n\n' | /media/joao/Backup/Jogos/gf.sh"
 	"sudo rm /home/joao/.face"
 	"sudo rm /home/joao/.face.icon"
-	"sudo rm /usr/share/applications/fortune.desktop"
-	"sudo rm /usr/share/applications/texdoctk.desktop"
 )
 
 log() {
@@ -152,15 +150,6 @@ restaurar_backup() {
 	done
 }
 
-aplicar_gsettings() {
-    log "Configurando ambiente de desktop GNOME..."
-
-    for config in "${configuracoes_gnome[@]}"; do
-        log "→ gsettings set $config"
-        sudo -u joao bash -c "gsettings set $config"
-    done
-}
-
 customizar_grub() {
 	local arquivo="/etc/default/grub"
 
@@ -221,7 +210,6 @@ main() {
 		configs)
 			customizar_grub
 			configurar_sudo
-			aplicar_gsettings
 			;;
 		tudo)
 			instalar_pacotes_fn
@@ -230,7 +218,6 @@ main() {
 			restaurar_backup
 			customizar_grub
 			configurar_sudo
-			aplicar_gsettings
 			corrigir_permissoes_home
 			;;
 		*)
