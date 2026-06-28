@@ -4,19 +4,21 @@ LOCAL_DIR="/home/joao/Vídeos"
 BASE_USB_DIR="/media/joao/Videoteca"
 
 if [ "$1" != "push" ] && [ "$1" != "pull" ]; then
-	echo "Uso: $0 [push|pull] [series|filmes]"
+	echo "Uso: $0 [push|pull] [series|filmes|animacoes]"
 	exit 1
 fi
 
-if [ "$2" != "series" ] && [ "$2" != "filmes" ]; then
-	echo "Erro: segundo argumento deve ser 'series' ou 'filmes'"
+if [ "$2" != "series" ] && [ "$2" != "filmes" ] && [ "$2" != "animacoes" ]; then
+	echo "Erro: segundo argumento deve ser 'series', 'filmes' ou 'animacoes'."
 	exit 1
 fi
 
 if [ "$2" = "series" ]; then
 	USB_DIR="$BASE_USB_DIR/_Séries"
-else
+elif [ "$2" = "filmes" ]; then
 	USB_DIR="$BASE_USB_DIR/_Filmes"
+else
+	USB_DIR="$BASE_USB_DIR/_Animações"
 fi
 
 if [ ! -d "$LOCAL_DIR" ]; then
