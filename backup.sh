@@ -5,7 +5,7 @@ set -euo pipefail
 DESTINO="/media/joao/Backup"
 
 ORIGENS=(
-    # "/home/joao/.config/StardewValley/Saves"
+    "/home/joao/.config/StardewValley/Saves"
     "/home/joao/Área de trabalho/Concurso"
     "/home/joao/Área de trabalho/dotfiles/setup.sh"
     # "/home/joao/Área de trabalho/Jogos"
