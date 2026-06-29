@@ -63,13 +63,10 @@ backup_itens=(
 	"/media/joao/Backup/Imagens|/home/joao/Imagens|conteudo"
 	"/media/joao/Backup/Modelos|/home/joao/Modelos|conteudo"
 	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho|pasta"
-	"/home/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
-	# "/media/joao/Backup/Saves|/home/joao/.config/StardewValley|pasta"
+	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
 )
 
 comandos_avulsos=(
-	# "printf 'n\n\ny\n/home/joao/.sv\n1\n\n' | /media/joao/Backup/Jogos/sv.sh"
-	# "printf 'n\n\ny\n/home/joao/.gf\n1\n\n' | /media/joao/Backup/Jogos/gf.sh"
 	"sudo rm /home/joao/.face"
 	"sudo rm /home/joao/.face.icon"
 	"sudo rm /usr/share/applications/fortune.desktop"

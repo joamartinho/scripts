@@ -8,7 +8,6 @@ ORIGENS=(
     "/home/joao/.config/StardewValley/Saves"
     "/home/joao/Área de trabalho/Concurso"
     "/home/joao/Área de trabalho/dotfiles/setup.sh"
-    # "/home/joao/Área de trabalho/Jogos"
     "/home/joao/Documentos"
     "/home/joao/Imagens"
     "/home/joao/Modelos"
