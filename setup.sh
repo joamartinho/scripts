@@ -48,21 +48,22 @@ remover_pacotes=(
 )
 
 repositorios=(
-	"https://github.com/martinhojoao/dotfiles.git|/home/joao/Área de trabalho/dotfiles"
-	"https://github.com/martinhojoao/martinhojoao.github.io.git|/home/joao/Área de trabalho/Página pessoal"
+	"https://github.com/martinhojoao/dotfiles.git|/home/joao/Área de trabalho/Dotfiles"
+	"https://github.com/martinhojoao/pagina-pessoal.git|/home/joao/Área de trabalho/Página pessoal"
 )
 
 backup_itens=(
 	# Repositório
-	"/home/joao/Área de trabalho/dotfiles/.bash_aliases|/home/joao/.bash_aliases|arquivo"
-	"/home/joao/Área de trabalho/dotfiles/.gitconfig|/home/joao/.gitconfig|arquivo"
-	"/home/joao/Área de trabalho/dotfiles/custom.cfg|/boot/grub/custom.cfg|arquivo"
+	"/home/joao/Área de trabalho/Dotfiles/.bash_aliases|/home/joao/.bash_aliases|arquivo"
+	"/home/joao/Área de trabalho/Dotfiles/.gitconfig|/home/joao/.gitconfig|arquivo"
+	"/home/joao/Área de trabalho/Dotfiles/custom.cfg|/boot/grub/custom.cfg|arquivo"
 
 	# Pendrive
 	"/media/joao/Backup/Documentos|/home/joao/Documentos|conteudo"
 	"/media/joao/Backup/Imagens|/home/joao/Imagens|conteudo"
 	"/media/joao/Backup/Modelos|/home/joao/Modelos|conteudo"
 	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho|pasta"
+	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho/Temporário|pasta"
 	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
 )
 
