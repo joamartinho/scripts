@@ -19,10 +19,6 @@ process_file () {
 			echo "Removendo todas as legendas de (MKV): $f"
 			mkvmerge -o "$tmp" --no-subtitles "$f"
 			;;
-		*.mp4)
-			echo "Removendo todas as legendas de (MP4): $f"
-			ffmpeg -i "$f" -map 0 -map -0:s -c copy "$tmp"
-			;;
 		*)
 			echo "Ignorando (não é MKV/MP4): $f"
 			return
