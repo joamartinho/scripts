@@ -13,7 +13,8 @@ while IFS= read -r -d $'\0' f; do
             --no-chapters \
             --no-track-tags \
             --no-global-tags \
-            --no-attachments)
+            --no-attachments \
+            --no-subtitles)
 
         [ -n "$first_audio_id" ] && cmd+=(--audio-tracks "$first_audio_id")
 
@@ -41,7 +42,7 @@ while IFS= read -r -d $'\0' f; do
             -i "$f" \
             -map 0:v:0 \
             -map 0:a:0? \
-            -map 0:s? \
+            -sn \
             -map -0:d \
             -c copy \
             -disposition:v:0 0 \

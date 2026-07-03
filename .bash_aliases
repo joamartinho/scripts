@@ -30,9 +30,8 @@ alias ajustar='bash "$DIR_DOTFILES/ajustar.sh"'
 alias backup='bash "$DIR_DOTFILES/backup.sh"'
 alias extrair='bash "$DIR_DOTFILES/extrair.sh"'
 alias formatar='bash "$DIR_DOTFILES/formatar.sh"'
-alias transferir='bash "$DIR_DOTFILES/transferir.sh"'
 alias normalizar='bash "$DIR_DOTFILES/normalizar.sh"'
-alias remover='bash "$DIR_DOTFILES/remover.sh"'
+alias transferir='bash "$DIR_DOTFILES/transferir.sh"'
 
 # Outros
 alias cat='lolcat'
