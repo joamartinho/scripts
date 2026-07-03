@@ -14,11 +14,11 @@ if [ "$2" != "series" ] && [ "$2" != "filmes" ] && [ "$2" != "animacoes" ]; then
 fi
 
 if [ "$2" = "series" ]; then
-	USB_DIR="$BASE_USB_DIR/_Séries"
+	USB_DIR="$BASE_USB_DIR/Séries"
 elif [ "$2" = "filmes" ]; then
-	USB_DIR="$BASE_USB_DIR/_Filmes"
+	USB_DIR="$BASE_USB_DIR/Filmes"
 else
-	USB_DIR="$BASE_USB_DIR/_Animações"
+	USB_DIR="$BASE_USB_DIR/Animações"
 fi
 
 if [ ! -d "$LOCAL_DIR" ]; then
