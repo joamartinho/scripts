@@ -1,11 +1,13 @@
 #!/bin/bash
 
-set -euo pipefail
+set -uo pipefail
 
 DESTINO="/media/joao/Backup"
 
 ORIGENS=(
     "/home/joao/.config/StardewValley/Saves"
+    "/home/joao/.mozilla"
+    "/home/joao/.thunderbird"
     "/home/joao/Área de trabalho/Concurso"
     "/home/joao/Área de trabalho/Dotfiles/setup.sh"
     "/home/joao/Área de trabalho/Temporário"
@@ -20,12 +22,12 @@ for ORIGEM in "${ORIGENS[@]}"; do
 
         rsync -a --update --delete \
               --human-readable --progress \
-              "$ORIGEM/" "$DESTINO/$NOME/"
+              "$ORIGEM/" "$DESTINO/$NOME/" || echo "Aviso: rsync reportou erros em $ORIGEM, mas continuando..."
 
     elif [ -f "$ORIGEM" ]; then
         rsync -a --update \
               --human-readable --progress \
-              "$ORIGEM" "$DESTINO/"
+              "$ORIGEM" "$DESTINO/" || echo "Aviso: rsync reportou erros no arquivo $ORIGEM, mas continuando..."
 
     else
         echo "Aviso: origem não encontrada, ignorando: $ORIGEM" >&2

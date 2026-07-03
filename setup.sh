@@ -59,12 +59,14 @@ backup_itens=(
 	"/home/joao/Área de trabalho/Dotfiles/custom.cfg|/boot/grub/custom.cfg|arquivo"
 
 	# Pendrive
+	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
+	"/media/joao/Backup/.mozilla|/home/joao|pasta"
+	"/media/joao/Backup/.thunderbird|/home/joao|pasta"
 	"/media/joao/Backup/Documentos|/home/joao/Documentos|conteudo"
 	"/media/joao/Backup/Imagens|/home/joao/Imagens|conteudo"
 	"/media/joao/Backup/Modelos|/home/joao/Modelos|conteudo"
 	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho|pasta"
 	"/media/joao/Backup/Concurso|/home/joao/Área de trabalho/Temporário|pasta"
-	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
 )
 
 comandos_avulsos=(

@@ -1,5 +1,5 @@
 # Variáveis Globais
-export DIR_DOTFILES="/home/joao/Área de trabalho/dotfiles"
+export DIR_DOTFILES="/home/joao/Área de trabalho/Dotfiles"
 
 # APT
 alias atualizar='sudo apt update && sudo apt full-upgrade -y'
