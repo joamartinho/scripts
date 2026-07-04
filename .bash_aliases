@@ -22,6 +22,7 @@ alias pull='git pull'
 alias push='git push'
 alias restaurar='git reset --hard'
 alias revincular='git remote set-url origin'
+alias status='git status'
 alias vincular='git init && git remote add origin'
 alias voltar='git reset --hard HEAD^'
 
@@ -31,6 +32,7 @@ alias backup='bash "$DIR_DOTFILES/backup.sh"'
 alias extrair='bash "$DIR_DOTFILES/extrair.sh"'
 alias formatar='bash "$DIR_DOTFILES/formatar.sh"'
 alias normalizar='bash "$DIR_DOTFILES/normalizar.sh"'
+alias organizar='bash "$DIR_DOTFILES/organizar.sh"'
 alias transferir='bash "$DIR_DOTFILES/transferir.sh"'
 
 # Outros

@@ -40,6 +40,8 @@ for ARQ in "${ARQUIVOS[@]}"; do
 
         if [ "$LANG" = "eng" ]; then
             LANG="en"
+        elif [ "$LANG" = "por" ]; then
+            LANG="pt"
         fi
 
         SAIDA="${BASE}.${LANG}"
