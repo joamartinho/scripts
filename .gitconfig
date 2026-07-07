@@ -1,7 +1,0 @@
-[user]
-	name = João Martinho
-	email = joao@joaomartinho.net.br
-[credential]
-	helper = store
-[pull]
-	rebase = false

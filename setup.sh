@@ -48,18 +48,15 @@ remover_pacotes=(
 )
 
 repositorios=(
-	"https://github.com/martinhojoao/dotfiles.git|/home/joao/Área de trabalho/Dotfiles"
+	"https://github.com/martinhojoao/scripts.git|/home/joao/Área de trabalho/Scripts"
 	"https://github.com/martinhojoao/pagina-pessoal.git|/home/joao/Área de trabalho/Página pessoal"
 )
 
 backup_itens=(
-	# Repositório
-	"/home/joao/Área de trabalho/Dotfiles/.bash_aliases|/home/joao/.bash_aliases|arquivo"
-	"/home/joao/Área de trabalho/Dotfiles/.gitconfig|/home/joao/.gitconfig|arquivo"
-	"/home/joao/Área de trabalho/Dotfiles/custom.cfg|/boot/grub/custom.cfg|arquivo"
-
-	# Pendrive
+	"/media/joao/Backup/.bash_aliases|/home/joao/.bash_aliases|arquivo"
 	"/media/joao/Backup/.git-credentials|/home/joao/.git-credentials|arquivo"
+	"/media/joao/Backup/.gitconfig|/home/joao/.gitconfig|arquivo"
+	"/media/joao/Backup/Documentos/custom.cfg|/boot/grub/custom.cfg|arquivo"
 	"/media/joao/Backup/Documentos|/home/joao/Documentos|conteudo"
 	"/media/joao/Backup/Imagens|/home/joao/Imagens|conteudo"
 	"/media/joao/Backup/Modelos|/home/joao/Modelos|conteudo"
@@ -70,8 +67,6 @@ backup_itens=(
 comandos_avulsos=(
 	"sudo rm /home/joao/.face"
 	"sudo rm /home/joao/.face.icon"
-	"sudo rm /usr/share/applications/fortune.desktop"
-	"sudo rm /usr/share/applications/txdoctk.desktop"
 )
 
 log() {
