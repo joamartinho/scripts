@@ -2,17 +2,17 @@
 
 set -uo pipefail
 
-DESTINO="/media/joao/Backup"
+DESTINO="/media/jms/Backup"
 
 ORIGENS=(
-    "/home/joao/.git-credentials"
-    "/home/joao/.gitconfig"
-    "/home/joao/Área de trabalho/Concurso"
-    "/home/joao/Área de trabalho/Scripts/setup.sh"
-    "/home/joao/Área de trabalho/Temporário"
-    "/home/joao/Documentos"
-    "/home/joao/Imagens"
-    "/home/joao/Modelos"
+    "/home/jms/.git-credentials"
+    "/home/jms/.gitconfig"
+    "/home/jms/Área de trabalho/Concurso"
+    "/home/jms/Área de trabalho/Scripts/setup.sh"
+    "/home/jms/Área de trabalho/Temporário"
+    "/home/jms/Documentos"
+    "/home/jms/Imagens"
+    "/home/jms/Modelos"
 )
 
 for ORIGEM in "${ORIGENS[@]}"; do
