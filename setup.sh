@@ -49,7 +49,7 @@ remover_pacotes=(
 
 repositorios=(
     "https://github.com/jmartinhosouza/scripts.git|/home/jms/Área de trabalho/Scripts"
-    "https://github.com/jmartinhosouza/pagina-pessoal.git|/home/jms/Área de trabalho/Página pessoal"
+    "https://github.com/jmartinhosouza/jmartinhosouza.github.io.git|/home/jms/Área de trabalho/Página pessoal"
 )
 
 backup_itens=(
